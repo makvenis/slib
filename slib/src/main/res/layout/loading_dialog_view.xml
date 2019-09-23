@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dialog_bg"
+    android:gravity="center"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <json.makvenis.com.mylibrary.json.view.SimpleLoading
+        android:id="@+id/mSimpleLoading"
+        android:layout_gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:textColor="#FFFFFF"
+        android:id="@+id/mMessage"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="asdasdas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
