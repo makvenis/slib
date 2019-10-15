@@ -79,8 +79,9 @@ public final class CountDownView extends View implements View.OnClickListener {
         setMeasuredDimension(w,h);
     }
     /* 默认高宽 */
-    private int defaultWH = 140;
-    private float defaultC = 120f;
+    private int defaultWH = 120;
+    /* 内外圈圆的半径 */
+    private float defaultC = 100f;
     private int w,h;
     /* 倒计时的秒数 */
     private long mTime = 10000;
@@ -99,7 +100,7 @@ public final class CountDownView extends View implements View.OnClickListener {
     /* pathMeasure管理器 */
     private PathMeasure mPathMeasure;
     /* 内圈、外圈的宽度 */
-    private float mWidth = 10f;
+    private float mWidth = 7f;
     /* 内圈汉字大小 */
     private float mTextSize = 32f;
     /* 倒计时 */
