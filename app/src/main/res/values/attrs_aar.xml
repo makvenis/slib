@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--1.名称可以自己随意命名使用驼峰命名方法 -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- 自定义属性 -->
+<resources>
+    <declare-styleable name="simple_aar">
+        <!-- 字体大小 -->
+        <attr name="textSize" format="integer"></attr>
+        <!-- 字体颜色 -->
+        <attr name="textColor" format="color"></attr>
+    </declare-styleable>
+</resources>
