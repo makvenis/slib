@@ -9,7 +9,7 @@
     android:padding="20dp"
     android:orientation="vertical">
 
-    <json.makvenis.com.mylibrary.json.view.SimpleLoading
+    <com.sirius.slib.SimpleLoading
         android:id="@+id/mSimpleLoading"
         android:layout_gravity="center"
         android:layout_width="50dp"
