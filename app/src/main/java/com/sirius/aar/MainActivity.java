@@ -5,29 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.sirius.slib.CountDownView;
-import com.sirius.slib.SimpleToast;
+import com.sirius.slib.SimpleNumberView;
 
-public class MainActivity extends AppCompatActivity {
+
+public class MainActivity extends AppCompatActivity implements SimpleNumberView.OnChangeNumberListener {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ((SimpleNumberView) findViewById(R.id.mBtn)).SetOnChangeNumberListener(this);
 
-        CountDownView view = (CountDownView) findViewById(R.id.mStopTimer);
-        view.setOnStopTimer(new CountDownView.OnClinkStopTimer() {
-            @Override
-            public void stop() {
-                SimpleToast.makeText(MainActivity.this,"我点击了让倒计时结束", Toast.LENGTH_LONG).show();
-            }
 
-            @Override
-            public void over() {
-                SimpleToast.makeText(MainActivity.this,"自动结束", Toast.LENGTH_LONG).show();
-            }
-        });
     }
 
+    @Override
+    public void number(int indexNum) {
+        Toast.makeText(this,indexNum+"",Toast.LENGTH_SHORT).show();
+    }
 }

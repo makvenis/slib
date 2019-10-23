@@ -41,9 +41,14 @@
 <!--            android:layout_width="wrap_content"-->
 <!--            android:layout_height="wrap_content"/>-->
 
-        <com.sirius.slib.CountDownView
-            android:id="@+id/mStopTimer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+<!--        <com.sirius.slib.CountDownView-->
+<!--            android:id="@+id/mStopTimer"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+            <com.sirius.slib.SimpleNumberView
+                android:id="@+id/mBtn"
+                android:layout_width="100dp"
+                android:layout_height="35dp"/>
 
 </LinearLayout>
