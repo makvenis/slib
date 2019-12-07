@@ -7,48 +7,47 @@
     tools:context=".MainActivity">
 
 
-<!--    <com.sirius.slib.SimpleImageViewCircleBitmap-->
-<!--        android:src="@drawable/icon_bg"-->
-<!--        android:layout_width="100dp"-->
-<!--        android:layout_height="100dp"-->
-<!--        tools:ignore="MissingConstraints">-->
-<!--    </com.sirius.slib.SimpleImageViewCircleBitmap>-->
+<!--    <com.sirius.slib.demo.SimpleDemoQueToView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--    </com.sirius.slib.demo.SimpleDemoQueToView>-->
 
-<!--    <com.sirius.aar.SimpleView-->
-<!--        android:background="#fac"-->
-<!--        android:layout_width="300dp"-->
-<!--        android:layout_height="100dp"-->
-<!--        tools:ignore="all">-->
-<!--    </com.sirius.aar.SimpleView>-->
+<!--    <com.sirius.slib.demo.SimpleDemoTimeView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--    </com.sirius.slib.demo.SimpleDemoTimeView>-->
 
-<!--    <com.sirius.aar.CircleView-->
-<!--        app:setBackground="#E91E63"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_width="match_parent">-->
-<!--    </com.sirius.aar.CircleView>-->
 
-<!--        <com.sirius.aar.DemoViewA-->
-<!--            android:background="#F8F7F7"-->
-<!--            android:layout_width="300dp"-->
-<!--            android:layout_height="300dp"-->
-<!--            custom:textColor="#fac"-->
-<!--            custom:textSize="18"-->
-<!--            >-->
-<!--        </com.sirius.aar.DemoViewA>-->
 
-<!--        <com.sirius.aar.DemoViewC-->
-<!--            android:background="#929292"-->
-<!--            android:layout_width="wrap_content"-->
+<!--    <view class="androidx.recyclerview.widget.RecyclerView"-->
+<!--        android:id="@+id/rv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--    </view>-->
+
+<!--        <com.sirius.aar.ViewGroupDemo-->
+<!--            android:layout_width="match_parent"-->
 <!--            android:layout_height="wrap_content"/>-->
 
-<!--        <com.sirius.slib.CountDownView-->
-<!--            android:id="@+id/mStopTimer"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"/>-->
+<!--        <com.sirius.aar.RefreshableViewTest-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_width="match_parent">-->
 
-            <com.sirius.slib.SimpleNumberView
-                android:id="@+id/mBtn"
-                android:layout_width="100dp"
-                android:layout_height="35dp"/>
+<!--            <ImageView-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:src="@drawable/icon_bg"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"/>-->
+
+<!--        </com.sirius.aar.RefreshableViewTest>-->
+
+        <Button
+            android:id="@+id/mFile"
+            android:text="文件选择"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+
+
 
 </LinearLayout>

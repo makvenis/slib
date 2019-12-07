@@ -131,7 +131,7 @@ public final class CountDownView extends View implements View.OnClickListener {
         mPathMeasure.setPath(mPath,false);
         float length = mPathMeasure.getLength();
         float v = length * mLoadingTime; //将要画图多少
-        Log.e("TAG","增量 "+v+" 总长度"+length);
+        //Log.e("TAG","增量 "+v+" 总长度"+length);
 
         mPathMeasure.getSegment(0,length - v,mDrawPath,true);
         canvas.drawPath(mDrawPath, mPaint);
@@ -142,7 +142,7 @@ public final class CountDownView extends View implements View.OnClickListener {
         this.mRemainingTime = mRemainingTimes;
         this.mOverTime = mOverTimes;
 
-        Log.e("TAG","mLoadingTime="+mLoadingTime+" mRemainingTime="+mRemainingTime);
+        //Log.e("TAG","mLoadingTime="+mLoadingTime+" mRemainingTime="+mRemainingTime);
 
         invalidate();
     }
@@ -157,7 +157,7 @@ public final class CountDownView extends View implements View.OnClickListener {
                 float mLoadingTime = f;
                 float mRemainingTime = 1f - mLoadingTime;
                 int mOverTime = (int) m / 1000;
-                Log.e("TAG","调用一次+"+mOverTime+" 画的百分比 "+mLoadingTime);
+                //Log.e("TAG","调用一次+"+mOverTime+" 画的百分比 "+mLoadingTime);
                 setStartDraw(mLoadingTime,mRemainingTime,mOverTime);
             }
 
